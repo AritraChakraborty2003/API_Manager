@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { adminEmail, adminPassword } from "../../Utils/GeneralValues";
 import { useNavigate } from "react-router-dom";
 
 const FormArea = () => {
   const navigate = useNavigate();
+
+  const [state, setState] = useState(false);
   const VerifyLogin = (e) => {
     e.preventDefault();
     const email = document.getElementById("email").value;
@@ -13,7 +15,7 @@ const FormArea = () => {
     } else {
       if (email === adminEmail) {
         if (password === adminPassword) {
-          localStorage.setItem("isLoggenIn", "true");
+          localStorage.setItem("isLoggedIn", "true");
           navigate("/dashboard");
         } else {
           alert("Wrong password entered...");
@@ -67,18 +69,38 @@ const FormArea = () => {
 
               <div className=" flex ml-2">
                 <input
-                  type="password"
+                  type={state === false ? "password" : "text"}
                   name="password"
                   id="password"
                   className="w-[73vw] lg:w-[29.5vw]  p-3 border-[1px]  rounded-[2.5vmin]"
                   placeholder="Enter password..."
                 />
-                <div className="boxHolder lg:w-[5vw] w-[7vw] h-[7vmin] lg:p-2 flex justify-center items-center mt-2 lg:mt-0 ml-2 lg:ml-0">
-                  <img
-                    src={require("../assets/closeeye.png")}
-                    className="max-w-full max-h-full object-contain "
-                  ></img>
-                </div>
+
+                {(state === false && (
+                  <div
+                    onClick={() => {
+                      setState(true);
+                    }}
+                    className="boxHolder lg:w-[5vw] w-[7vw] h-[7vmin] lg:p-2 flex justify-center items-center mt-2 lg:mt-0 ml-2 lg:ml-0"
+                  >
+                    <img
+                      src={require("../assets/closeeye.png")}
+                      className="max-w-full max-h-full object-contain "
+                    ></img>
+                  </div>
+                )) || (
+                  <div
+                    onClick={() => {
+                      setState(false);
+                    }}
+                    className="boxHolder lg:w-[5vw] w-[7vw] h-[7vmin] lg:p-2 flex justify-center items-center mt-2 lg:mt-0 ml-2 lg:ml-0"
+                  >
+                    <img
+                      src={require("../assets/openeye.png")}
+                      className="max-w-full max-h-full object-contain "
+                    ></img>
+                  </div>
+                )}
               </div>
               <div className="flex gap-x-[17vmin] lg:gap-x-[30vmin] ">
                 <div>

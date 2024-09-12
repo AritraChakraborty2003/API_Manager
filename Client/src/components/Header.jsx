@@ -17,7 +17,13 @@ const Header = () => {
           </div>
           <div className="emptyHolder w-[45vw] lg:w-[70vw]"></div>
           <div className="btnHolder">
-            <button className="bg-white text-black p-3 text-[2.75vmin] rounded-md">
+            <button
+              className="bg-white text-black p-3 text-[2.75vmin] rounded-md"
+              onClick={() => {
+                localStorage.removeItem("isLoggedIn");
+                window.location.href = "/";
+              }}
+            >
               Logout
             </button>
           </div>
