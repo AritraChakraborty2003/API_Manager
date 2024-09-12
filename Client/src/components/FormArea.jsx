@@ -45,7 +45,7 @@ const FormArea = () => {
             <p className="font-extrabold text-[10vmin] md:text-[7.5vmin] text-center text-[#494949] mt-2">
               Login
             </p>
-            <div className="underline h-[10px] w-[17vmin] md:w-[17vmin] bg-[#e0bb02]"></div>
+            <div className="underline  h-[6px] md:h-[10px] w-[21vmin] md:w-[17vmin] bg-[#e0bb02]"></div>
           </div>
           <form className="flex flex-col gap-y-[5vmin]">
             <div className="flex flex-col  gap-y-1">
