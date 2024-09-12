@@ -1,13 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Error from "./components/Error";
+import FormArea from "./components/FormArea";
+import ApiManager from "./components/ApiManager";
 const AppLayout = () => {
   return (
     <>
-      <p>This is code</p>
+      <FormArea />
     </>
   );
 };
 
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/ApiManager",
+    element: <ApiManager />,
+  },
+  {
+    path: "/dashboard",
+    element: <ApiManager />,
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter} />);
