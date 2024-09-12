@@ -25,7 +25,7 @@ const FormArea = () => {
   };
   return (
     <div className="w-[100vw] h-[100vh] flex justify-center items-center">
-      <div className="w-[90vw] border-[2.5px] rounded-[2vmin] border-[#e4e4e4] flex">
+      <div className="w-[98vw] md:w-[90vw] border-[2.5px] rounded-[2vmin] border-[#e4e4e4] flex">
         <div className="hidden lg:block">
           <div className="leftHolder opacity-90 flex flex-col gap-y-7 justify-center items-center  w-[50vw] bg-[#128496] lg:h-[90vmin]">
             <div className="imageHolder w-[28vw] h-[65vmin]">
@@ -40,7 +40,7 @@ const FormArea = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-y-[7.5vmin]  justify-center items-center leftHolder w-[95vw] p-3  lg:w-[40vw]  lg:h-[90vmin]">
+        <div className="flex flex-col gap-y-[7.5vmin]  justify-center items-center leftHolder w-[98vw]  p-3  lg:w-[40vw]  lg:h-[90vmin]">
           <div>
             <p className="font-extrabold text-[10vmin] md:text-[7.5vmin] text-center text-[#494949] mt-2">
               Login
@@ -56,7 +56,7 @@ const FormArea = () => {
                 type="text"
                 name="email"
                 id="email"
-                className="border-[1px] w-[78vw] lg:w-[33vw] p-3 rounded-[2.5vmin]"
+                className="border-[1px] w-[81vw] lg:w-[33vw] p-3 rounded-[2.5vmin]"
                 placeholder="Enter your email..."
               />
             </div>
@@ -70,10 +70,10 @@ const FormArea = () => {
                   type="password"
                   name="password"
                   id="password"
-                  className="w-[70vw] lg:w-[29.5vw]  p-3 border-[1px]  rounded-[2.5vmin]"
+                  className="w-[73vw] lg:w-[29.5vw]  p-3 border-[1px]  rounded-[2.5vmin]"
                   placeholder="Enter password..."
                 />
-                <div className="boxHolder lg:w-[5vw] w-[10vw] h-[7vmin] lg:p-2 flex justify-center items-center mt-2 lg:mt-0 ml-2 lg:ml-0">
+                <div className="boxHolder lg:w-[5vw] w-[7vw] h-[7vmin] lg:p-2 flex justify-center items-center mt-2 lg:mt-0 ml-2 lg:ml-0">
                   <img
                     src={require("../assets/closeeye.png")}
                     className="max-w-full max-h-full object-contain "
