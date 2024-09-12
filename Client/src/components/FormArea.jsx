@@ -102,7 +102,7 @@ const FormArea = () => {
             <div className="w-[85vw] lg:w-[35vw]">
               <button
                 onClick={VerifyLogin}
-                className="rounded-xl w-[70vw] lg:w-[30vw] bg-[#e0bb02] text-[3.35vmin] lg:text-[2.75vmin] text-[#414141] font-medium text-center p-3"
+                className="rounded-xl w-[70vw] lg:w-[30vw] bg-[#e0bb02] text-[4.25vmin] lg:text-[2.75vmin] text-[#414141] font-medium text-center p-3"
               >
                 Sign In
               </button>
