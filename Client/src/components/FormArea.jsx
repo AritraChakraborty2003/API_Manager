@@ -40,7 +40,7 @@ const FormArea = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-y-[7.5vmin]  justify-center items-center leftHolder w-[96vw]  p-3  lg:w-[40vw]  lg:h-[90vmin]">
+        <div className="flex flex-col gap-y-[7.5vmin]  justify-center items-center leftHolder w-[96vw]  p-5  lg:w-[40vw]  lg:h-[90vmin]">
           <div>
             <p className="font-extrabold text-[10vmin] md:text-[7.5vmin] text-center text-[#494949] mt-2">
               Login
