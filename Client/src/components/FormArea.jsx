@@ -24,7 +24,7 @@ const FormArea = () => {
     }
   };
   return (
-    <div className="w-[100vw] h-[98vh] flex justify-center items-center">
+    <div className="w-[100vw] h-[96vh] lg:h-[100vh] flex justify-center items-center">
       <div className="w-[96vw] md:w-[90vw] border-[2.5px] rounded-[2vmin] border-[#e4e4e4] flex">
         <div className="hidden lg:block">
           <div className="leftHolder opacity-90 flex flex-col gap-y-7 justify-center items-center  w-[50vw] bg-[#128496] lg:h-[90vmin]">
