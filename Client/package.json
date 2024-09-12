@@ -1,0 +1,30 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "This is a API Manager project to manage the portfolio APIs",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html ",
+    "preview": "parcel preview index.html"
+  },
+  "keywords": [
+    "APIs",
+    "Portfolio",
+    "Project",
+    "API",
+    "Manager"
+  ],
+  "author": "Aritra Chakraborty",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.45",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.11"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
