@@ -25,9 +25,9 @@ const FormArea = () => {
   };
   return (
     <div className="w-[100vw] h-[96vh] lg:h-[100vh] flex justify-center items-center">
-      <div className="w-[96vw] md:w-[90vw] border-[2.5px] rounded-[2vmin] border-[#e4e4e4] flex">
+      <div className="w-[96vw] md:w-[90vw] border-[2.5px] rounded-[2.5vmin] border-[#e4e4e4] flex">
         <div className="hidden lg:block">
-          <div className="leftHolder opacity-90 flex flex-col gap-y-7 justify-center items-center  w-[50vw] bg-[#128496] lg:h-[90vmin]">
+          <div className="leftHolder  rounded-[2.5vmin] opacity-90 flex flex-col gap-y-7 justify-center items-center  w-[50vw] bg-[#128496] lg:h-[90vmin]">
             <div className="imageHolder w-[28vw] h-[65vmin]">
               <img
                 src={require("../assets/api.png")}
@@ -35,8 +35,8 @@ const FormArea = () => {
               />
             </div>
 
-            <p className="text-white font-extrabold text-[5vmin] font-Montserrat">
-              API Manager Application
+            <p className="text-white font-medium text-[4.5vmin] font-Montserrat">
+              API Manager Application...
             </p>
           </div>
         </div>
