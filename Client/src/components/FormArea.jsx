@@ -1,5 +1,5 @@
 import React from "react";
-import { adminEmail, adminPassword } from "../../Utils/constants.js";
+import { adminEmail, adminPassword } from "../../Utils/GeneralValues";
 import { useNavigate } from "react-router-dom";
 
 const FormArea = () => {
