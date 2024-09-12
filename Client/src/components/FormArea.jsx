@@ -24,8 +24,8 @@ const FormArea = () => {
     }
   };
   return (
-    <div className="w-[100vw] h-[100vh] flex justify-center items-center">
-      <div className="w-[98vw] md:w-[90vw] border-[2.5px] rounded-[2vmin] border-[#e4e4e4] flex">
+    <div className="w-[100vw] h-[98vh] flex justify-center items-center">
+      <div className="w-[96vw] md:w-[90vw] border-[2.5px] rounded-[2vmin] border-[#e4e4e4] flex">
         <div className="hidden lg:block">
           <div className="leftHolder opacity-90 flex flex-col gap-y-7 justify-center items-center  w-[50vw] bg-[#128496] lg:h-[90vmin]">
             <div className="imageHolder w-[28vw] h-[65vmin]">
@@ -36,11 +36,11 @@ const FormArea = () => {
             </div>
 
             <p className="text-white font-extrabold text-[5vmin] font-Montserrat">
-              API Manager Application...
+              API Manager Application
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-y-[7.5vmin]  justify-center items-center leftHolder w-[98vw]  p-3  lg:w-[40vw]  lg:h-[90vmin]">
+        <div className="flex flex-col gap-y-[7.5vmin]  justify-center items-center leftHolder w-[96vw]  p-3  lg:w-[40vw]  lg:h-[90vmin]">
           <div>
             <p className="font-extrabold text-[10vmin] md:text-[7.5vmin] text-center text-[#494949] mt-2">
               Login
@@ -99,12 +99,14 @@ const FormArea = () => {
                 </div>
               </div>
             </div>
-            <button
-              onClick={VerifyLogin}
-              className="rounded-xl w-[70vw] lg:w-[30vw] bg-[#e0bb02] text-[3.35vmin] lg:text-[2.75vmin] text-[#414141] font-medium text-center p-3"
-            >
-              Sign In
-            </button>
+            <div className="w-[85vw] lg:w-[35vw]">
+              <button
+                onClick={VerifyLogin}
+                className="rounded-xl w-[70vw] lg:w-[30vw] bg-[#e0bb02] text-[3.35vmin] lg:text-[2.75vmin] text-[#414141] font-medium text-center p-3"
+              >
+                Sign In
+              </button>
+            </div>
 
             <p>*Please login to manage the APIs</p>
           </form>
