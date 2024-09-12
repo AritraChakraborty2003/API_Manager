@@ -93,7 +93,7 @@ const FormArea = () => {
                   <label for="checkbox1">Remember me</label>
                 </div>
                 <div>
-                  <p className="mt-[4.5vmin] text-[#919191] font-medium">
+                  <p className="hidden lg:block mt-[4.5vmin] text-[#919191] font-medium">
                     Forget password?
                   </p>
                 </div>
