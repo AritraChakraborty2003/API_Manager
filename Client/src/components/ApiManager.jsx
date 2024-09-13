@@ -44,7 +44,7 @@ const ApiManager = () => {
   ];
   return (
     <>
-      {(localStorage.getItem("isLoggedIn") === "true" && (
+      {localStorage.getItem("isLoggedIn") === "true" ? (
         <>
           <Header />
           <div className="pt-5 pb-5">
@@ -62,8 +62,9 @@ const ApiManager = () => {
             </div>
           </div>
         </>
-      )) ||
-        (window.location.href = "/")}
+      ) : (
+        (window.location.href = "/")
+      )}
     </>
   );
 };
