@@ -63,7 +63,7 @@ const ApiManager = () => {
           </div>
         </>
       )) ||
-        navigate("/")}
+        (window.location.href = "/")}
     </>
   );
 };

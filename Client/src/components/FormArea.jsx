@@ -3,7 +3,7 @@ import { adminEmail, adminPassword } from "../../Utils/GeneralValues";
 import { useNavigate } from "react-router-dom";
 
 const FormArea = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const [state, setState] = useState(false);
   const VerifyLogin = (e) => {
@@ -16,7 +16,7 @@ const FormArea = () => {
       if (email === adminEmail) {
         if (password === adminPassword) {
           localStorage.setItem("isLoggedIn", "true");
-          navigate("/dashboard");
+          window.location.href = "/dashboard";
         } else {
           alert("Wrong password entered...");
         }
