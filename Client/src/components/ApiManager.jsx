@@ -1,7 +1,9 @@
 import React from "react";
 import ProfileCMSCard from "./ProfileCMSCard";
 import Header from "./Header";
+import { useNavigate } from "react-router-dom";
 const ApiManager = () => {
+  const navigate = useNavigate();
   const iconsHolder = [
     {
       title: "Socials",
@@ -61,7 +63,7 @@ const ApiManager = () => {
           </div>
         </>
       )) ||
-        (window.location.href = "/")}
+        navigate("/")}
     </>
   );
 };
