@@ -5,6 +5,11 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import DBConnectFunction from "./Connection/dbConnect.js";
 import { generalRouter } from "./Routes/generalRouter.js";
+import { socialsRouter } from "./Routes/socialsRouter.js";
+import { aboutRouter } from "./Routes/aboutRouter.js";
+import { skillsRouter } from "./Routes/skillsRouter.js";
+import { experienceRouter } from "./Routes/experienceRouter.js";
+import { educationRouter } from "./Routes/educationRouter.js";
 
 //Application Configuration
 dotenv.config();
@@ -18,6 +23,11 @@ DBConnectFunction(process.env.MONGODB_URI);
 
 //API Routes
 app.use("/", generalRouter);
+app.use("/socials", socialsRouter);
+app.use("/abouts", aboutRouter);
+app.use("/skills", skillsRouter);
+app.use("/experience", experienceRouter);
+app.use("/education", educationRouter);
 
 //Listen to App
 app.listen(PORT, () => {

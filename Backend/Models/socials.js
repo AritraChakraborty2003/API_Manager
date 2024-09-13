@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 const socialsSchema = mongoose.schema(
   {
+    type: {
+      type: String,
+      require: true,
+    },
     link: {
       type: String,
       require: true,
