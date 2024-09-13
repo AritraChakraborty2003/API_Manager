@@ -35,7 +35,7 @@ const GeneralCMS = () => {
     };
 
     axios
-      .post("http://localhost:8080/socials", formData, config)
+      .post("https://api-manager.quizdrobe.online/socials", formData, config)
       .then((res) => {
         if (res.data.status == 200) {
           alert("Data Uploaded successfully!!!");
