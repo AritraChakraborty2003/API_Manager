@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./components/Error";
 import FormArea from "./components/FormArea";
 import ApiManager from "./components/ApiManager";
+import GeneralCMS from "./components/GeneralCMS";
 const AppLayout = () => {
   return (
     <>
@@ -25,6 +26,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/dashboard",
     element: <ApiManager />,
+  },
+  {
+    path: "/generalCMS",
+    element: <GeneralCMS />,
   },
 ]);
 

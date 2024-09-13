@@ -1,11 +1,14 @@
 import { socials } from "../Models/socials.js";
 const postSocials = () => {
   return (req, res) => {
-    const { type, link, icons } = req.body;
+    const { type, link } = req.body;
+    const file = req.file.filename;
     const socialsObj = new socials({
+      type: type,
       link: link,
-      icons: icons,
+      file: file,
     });
+
     socialsObj.save();
     return res.status(200).send({ status: 200 });
   };

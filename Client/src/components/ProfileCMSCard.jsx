@@ -1,13 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { CMSLink } from "../../Utils/GeneralValues.js";
 
 const ProfileCMSCard = (props) => {
   const navigate = useNavigate();
   const goToPage = (...args) => {
     console.log("button Clicked");
-    const title = args[0].title;
-    const link = args[0].link;
-    navigate(link, { state: { data: title } });
+    const value = args[0].value;
+    const link = CMSLink;
+    navigate(CMSLink, { state: { data: value } });
   };
   return (
     <>

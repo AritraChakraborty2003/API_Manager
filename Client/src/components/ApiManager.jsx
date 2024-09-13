@@ -3,29 +3,39 @@ import ProfileCMSCard from "./ProfileCMSCard";
 import Header from "./Header";
 const ApiManager = () => {
   const iconsHolder = [
-    { title: "Socials", link: "/socialsCMSAdd", icon: "social.svg" },
+    {
+      title: "Socials",
+      value: "socials",
+      link: "/socialsCMSAdd",
+      icon: "social.svg",
+    },
     {
       title: "About",
+      value: "abouts",
       link: "/aboutAdd",
       icon: "about.png",
     },
     {
       title: "Skills",
+      value: "skills",
       link: "/skillsAdd",
       icon: "skills.png",
     },
     {
       title: "Edu",
+      value: "education",
       link: "/EducationAdd",
       icon: "education.png",
     },
     {
       title: "Projects",
+      value: "projects",
       link: "/projectsAdd",
       icon: "projects.png",
     },
     {
       title: "Workex",
+      value: "experience",
       link: "/WorkexAdd",
       icon: "workex.png",
     },

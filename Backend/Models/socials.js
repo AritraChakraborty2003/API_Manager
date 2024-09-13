@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const socialsSchema = mongoose.schema(
+const socialsSchema = mongoose.Schema(
   {
     type: {
       type: String,
@@ -10,7 +10,7 @@ const socialsSchema = mongoose.schema(
       type: String,
       require: true,
     },
-    icons: {
+    file: {
       type: String,
       require: true,
     },
