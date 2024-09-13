@@ -16,7 +16,7 @@ const FormArea = () => {
       if (email === adminEmail) {
         if (password === adminPassword) {
           localStorage.setItem("isLoggedIn", "true");
-          window.location.href = "/dashboard";
+          navigate("/dashboard");
         } else {
           alert("Wrong password entered...");
         }
