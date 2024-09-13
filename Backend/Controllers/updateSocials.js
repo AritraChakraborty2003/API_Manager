@@ -1,4 +1,4 @@
-import { socials } from "../Models/socials.js";
+import { Socials } from "../Models/socials.js";
 const updateSocials = () => {
   return (req, res) => {
     const { type, link } = req.body;

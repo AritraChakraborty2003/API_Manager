@@ -16,9 +16,9 @@ const socialsSchema = mongoose.Schema(
     },
   },
   {
-    Collection: "socials",
+    Collection: "Socials",
   }
 );
 
-const socials = mongoose.model("socials", socialsSchema);
-export { socials };
+const Socials = mongoose.model("Socials", socialsSchema);
+export { Socials };
