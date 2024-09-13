@@ -1,8 +1,7 @@
-import { socials } from "../Models/socials.js";
+import { Socials } from "../Models/socials.js";
 
 const getSocials = (req, res) => {
-  socials
-    .find()
+  Socials.find()
     .then((val) => {
       res.json(val);
     })

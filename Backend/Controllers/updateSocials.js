@@ -2,8 +2,7 @@ import { Socials } from "../Models/socials.js";
 const updateSocials = () => {
   return (req, res) => {
     const { type, link } = req.body;
-    socials
-      .find({ type: type })
+    Socials.find({ type: type })
       .then((doc) => {
         doc.link = link;
         doc.save();
