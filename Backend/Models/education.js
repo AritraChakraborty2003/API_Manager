@@ -28,9 +28,9 @@ const eduSchema = mongoose.Schema(
     },
   },
   {
-    Collections: "educations",
+    Collections: "Educations",
   }
 );
 
-const educations = mongoose.model("educations", eduSchema);
+const educations = mongoose.model("Educations", eduSchema);
 export { educations };
