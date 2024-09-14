@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const skillsSchema = mongoose.Schema(
   {
-    image: {
+    file: {
       type: String,
       require: true,
     },
@@ -11,9 +11,9 @@ const skillsSchema = mongoose.Schema(
     },
   },
   {
-    Collections: "skills",
+    Collections: "Skills",
   }
 );
 
-const skills = mongoose.model("skills", skillsSchema);
+const skills = mongoose.model("Skills", skillsSchema);
 export { skills };

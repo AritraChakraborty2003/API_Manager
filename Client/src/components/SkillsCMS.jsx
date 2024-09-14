@@ -5,7 +5,7 @@ import {
   TEST_API_BASE_URL,
   PRODUCTION_API_BASE_URL,
 } from "../../Utils/GeneralValues.js";
-const SocialsCMS = () => {
+const SkillsCMS = () => {
   const [state, setState] = useState({
     selectedFile: null,
     filename: null,
@@ -19,14 +19,13 @@ const SocialsCMS = () => {
   };
   const fileUploadHandlerSocials = (event) => {
     event.preventDefault();
-    let type = document.getElementById("type").value;
-    let link = document.getElementById("link").value;
+    let type = document.getElementById("name").value;
+
     // let file = event.target.files[0].name;
     // let filename = document.getElementById("file").value;
 
     let formData = new FormData();
-    formData.append("type", type);
-    formData.append("link", link);
+    formData.append("name", type);
     formData.append("filename", state.filename);
     formData.append("file", state.selectedFile);
 
@@ -35,7 +34,7 @@ const SocialsCMS = () => {
     };
 
     axios
-      .post(`${PRODUCTION_API_BASE_URL}` + "socials", formData, config)
+      .post(`${TEST_API_BASE_URL}` + "skills", formData, config)
       .then((res) => {
         if (res.data.status == 200) {
           alert("Data Uploaded successfully!!!");
@@ -56,16 +55,11 @@ const SocialsCMS = () => {
           </h1>
           <input
             type="text"
-            id="type"
-            placeholder="Enter Social Media Type..."
+            id="name"
+            placeholder="Enter Skills Name..."
             className="p-3 border-[2px] w-[90vw] lg:w-[75vmin]"
           />
-          <input
-            type="text"
-            id="link"
-            placeholder="Enter Social Media Link..."
-            className="p-3 border-[2px] w-[90vw] lg:w-[75vmin]"
-          />
+
           <input
             type="file"
             name="file"
@@ -86,4 +80,4 @@ const SocialsCMS = () => {
   );
 };
 
-export default SocialsCMS;
+export default SkillsCMS;
