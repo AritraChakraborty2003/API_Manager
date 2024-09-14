@@ -15,7 +15,9 @@ const GeneralCMS = () => {
         {(location.state?.data === "socials" && <SocialsCMS />) ||
           (location.state?.data === "experience" && <ExperienceCMS />) ||
           (location.state?.data === "skills" && <SkillsCMS />) ||
-          (location.state?.data === "abouts" && <AboutCMS />)}
+          (location.state?.data === "abouts" && <AboutCMS />) ||
+          (location.state?.data === "education" && <EducationCMS />) ||
+          (location.state?.data === "projects" && <ProjectsCMS />)}
       </div>
     </>
   );

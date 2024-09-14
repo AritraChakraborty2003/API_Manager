@@ -24,9 +24,9 @@ const projectsSchema = mongoose.Schema(
     },
   },
   {
-    Collections: "projects",
+    Collections: "Projects",
   }
 );
 
-const projects = mongoose.model("projects", projectsSchema);
+const projects = mongoose.model("Projects", projectsSchema);
 export { projects };

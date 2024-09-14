@@ -10,6 +10,7 @@ import { aboutRouter } from "./Routes/aboutRouter.js";
 import { skillsRouter } from "./Routes/skillsRouter.js";
 import { experienceRouter } from "./Routes/experienceRouter.js";
 import { educationRouter } from "./Routes/educationRouter.js";
+import { projectsRouter } from "./Routes/projectsRouter.js";
 
 //Application Configuration
 dotenv.config();
@@ -26,6 +27,7 @@ DBConnectFunction(process.env.MONGODB_URI);
 app.use("/", generalRouter);
 app.use("/socials", socialsRouter);
 app.use("/about", aboutRouter);
+app.use("/projects", projectsRouter);
 app.use("/skills", skillsRouter);
 app.use("/experience", experienceRouter);
 app.use("/education", educationRouter);
