@@ -1,4 +1,5 @@
 import { Socials } from "../Models/socials.js";
+
 const postSocials = () => {
   return (req, res) => {
     const { type, link } = req.body;
@@ -6,7 +7,7 @@ const postSocials = () => {
     const socialsObj = new Socials({
       type: type,
       link: link,
-      file: file,
+      file: process.env.BASE_URL + file,
     });
 
     socialsObj.save();
