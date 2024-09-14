@@ -51,7 +51,7 @@ const SkillsCMS = () => {
       <div className="formArea  w-[100vw] h-[90vh] lg:h-[90vh] flex flex-col justify-center items-center">
         <form className="w-[96vw] h-[90vmin] lg:w-[80vmin] lg:h-[55vmin] p-[7vmin] border-[2px] flex justify-center items-center flex-col gap-y-[5vmin]">
           <h1 className="text-[5vmin] lg:text-[4vmin] text-[#157186] font-extrabold">
-            Add Socials...
+            Add Skills...
           </h1>
           <input
             type="text"
