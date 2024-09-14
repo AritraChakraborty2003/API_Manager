@@ -5,6 +5,7 @@ import Error from "./components/Error";
 import FormArea from "./components/FormArea";
 import ApiManager from "./components/ApiManager";
 import GeneralCMS from "./components/GeneralCMS";
+import About from "./components/About";
 const AppLayout = () => {
   return (
     <>
@@ -29,6 +30,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/generalCMS",
     element: <GeneralCMS />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 
