@@ -42,7 +42,7 @@ const ProjectsCMS = () => {
     };
 
     axios
-      .post(`${TEST_API_BASE_URL}` + "projects", formData, config)
+      .post(`${PRODUCTION_API_BASE_URL}` + "projects", formData, config)
       .then((res) => {
         if (res.data.status == 200) {
           alert("Data Uploaded successfully!!!");
