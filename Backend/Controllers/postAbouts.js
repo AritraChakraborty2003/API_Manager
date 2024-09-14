@@ -16,7 +16,7 @@ const postAbouts = () => {
       image: process.env.BASE_URL + file,
       name: name,
       designation: designation,
-      description: description,
+      descr: description,
       location: location,
       email: email,
       phone: phone,
