@@ -14,6 +14,10 @@ const projectsSchema = mongoose.Schema(
       type: String,
       require: true,
     },
+    ptechStack: {
+      type: String,
+      require: true,
+    },
     pLiveLink: {
       type: String,
       require: true,

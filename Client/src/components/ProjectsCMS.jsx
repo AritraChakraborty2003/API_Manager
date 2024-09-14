@@ -25,13 +25,14 @@ const ProjectsCMS = () => {
     let pdetails = document.getElementById("pdetails").value;
     let pLiveLink = document.getElementById("pLiveLink").value;
     let pgitLink = document.getElementById("pgitLink").value;
-
+    let ptechStack = document.getElementById("ptechStack").value;
     // let file = event.target.files[0].name;
     // let filename = document.getElementById("file").value;
 
     let formData = new FormData();
     formData.append("pname", pname);
     formData.append("pdetails", pdetails);
+    formData.append("ptechStack", ptechStack);
     formData.append("pLiveLink", pLiveLink);
     formData.append("pgitLink", pgitLink);
     formData.append("filename", state.filename);
@@ -90,7 +91,13 @@ const ProjectsCMS = () => {
             className="p-3 border-[2px] w-[90vw] lg:w-[75vmin]"
             placeholder="Enter your project Github Link..."
           />
-
+          <input
+            type="text"
+            name="ptechStack"
+            id="ptechStack"
+            className="p-3 border-[2px] w-[90vw] lg:w-[75vmin]"
+            placeholder="Enter your project Github Link..."
+          />
           <input
             type="file"
             name="file"
