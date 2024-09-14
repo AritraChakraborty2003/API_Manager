@@ -30,7 +30,7 @@ const ProjectsCMS = () => {
     // let filename = document.getElementById("file").value;
 
     let formData = new FormData();
-    formData.append("name", pname);
+    formData.append("pname", pname);
     formData.append("pdetails", pdetails);
     formData.append("pLiveLink", pLiveLink);
     formData.append("pgitLink", pgitLink);
@@ -103,7 +103,7 @@ const ProjectsCMS = () => {
             onClick={fileUploadHandlerAbout}
             className="bg-[#157186] text-white p-2"
           >
-            Add Socials
+            Add Projects
           </button>
         </form>
       </div>
