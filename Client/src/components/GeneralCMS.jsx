@@ -5,6 +5,8 @@ import SocialsCMS from "./SocialsCMS";
 import ExperienceCMS from "./ExperienceCMS";
 import SkillsCMS from "./SkillsCMS";
 import AboutCMS from "./AboutCMS";
+import ProjectsCMS from "./ProjectsCMS";
+import EducationCMS from "./EducationCMS";
 const GeneralCMS = () => {
   const location = useLocation();
 

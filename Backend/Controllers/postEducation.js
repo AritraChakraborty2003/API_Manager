@@ -4,7 +4,7 @@ const postEducation = () => {
     const { dname, instname, board, date, marks } = req.body;
     const file = req.file.filename;
     const educationObj = new educations({
-      dimage: file,
+      image: process.env.BASE_URL + file,
       dname: dname,
       instname: instname,
       board: board,

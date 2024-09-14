@@ -85,14 +85,14 @@ const AboutCMS = () => {
             name="designation"
             id="designation"
             className="p-3 border-[2px] w-[90vw] lg:w-[75vmin]"
-            placeholder="Enter your deignation..."
+            placeholder="Enter your designation..."
           />
           <input
             type="text"
-            name="phon"
+            name="phone"
             id="phone"
             className="p-3 border-[2px] w-[90vw] lg:w-[75vmin]"
-            placeholder="Enter your name..."
+            placeholder="Enter your phone no..."
           />
           <input
             type="text"

@@ -5,7 +5,7 @@ const postProjects = () => {
     const { pname, pdetails, pLiveLink, pgitLink } = req.body;
     const file = req.file.filename;
     const projectObj = new projects({
-      pimage: file,
+      pimage: process.env.BASE_URL + file,
       pname: pname,
       pdetails: pdetails,
       pLiveLink: pLiveLink,
