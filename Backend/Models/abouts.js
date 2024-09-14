@@ -10,6 +10,10 @@ const aboutSchema = mongoose.Schema(
       type: String,
       require: true,
     },
+    designation: {
+      type: String,
+      require: true,
+    },
     descr: {
       type: String,
       require: true,

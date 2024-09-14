@@ -25,7 +25,7 @@ DBConnectFunction(process.env.MONGODB_URI);
 //API Routes
 app.use("/", generalRouter);
 app.use("/socials", socialsRouter);
-app.use("/abouts", aboutRouter);
+app.use("/about", aboutRouter);
 app.use("/skills", skillsRouter);
 app.use("/experience", experienceRouter);
 app.use("/education", educationRouter);
