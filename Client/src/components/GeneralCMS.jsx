@@ -35,7 +35,7 @@ const GeneralCMS = () => {
     };
 
     axios
-      .post("https://api-manager.quizdrobe.online/socials", formData, config)
+      .post("https://api.urtechguru.online/socials", formData, config)
       .then((res) => {
         if (res.data.status == 200) {
           alert("Data Uploaded successfully!!!");
