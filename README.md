@@ -1,5 +1,5 @@
 <h1>This is  an  API Manager Applicaton</h1>
-<h4> Link:&nbsp;<a href="https://urtechguru.online/" target="_blank">&nbsp;https://api-dashboard.quizdrobe.online/</a></h4>
+<h4> Link:&nbsp;<a href="https://urtechguru.online/" target="_blank">&nbsp;https://urtechguru.online/</a></h4>
 <h2>Tech Stack:</h2>
    <b>Frontend Technologies :</b> HTML,CSS,JS and react.js
    <br>
