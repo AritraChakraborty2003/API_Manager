@@ -32,9 +32,7 @@ const FormArea = () => {
           <div className="leftHolder  rounded-[2.5vmin] opacity-90 flex flex-col gap-y-7 justify-center items-center  w-[50vw] bg-[#128496] lg:h-[90vmin]">
             <div className="imageHolder w-[28vw] h-[65vmin]">
               <img
-                src={
-                  "https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22api.png%22%2C%22type%22%3A%22image%2Fpng%22%2C%22signedurl_expire%22%3A%222028-04-12T08%3A27%3A40.132Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2Fc629de0cdd424093%2Fapi.png%3FExpires%3D1839140860%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3DzFX8kJ75itMaeddgTk0Y~SKQUou8uqBE7F0kRUYiOn1HO5iLk8jVxD~TjFc9wuBreT9b3KFXkFLS~2iB6pvly~dUs3Hxk96jmsuByBdtEETgYqWzJpcoHWrF-VrtT34avm7wpYVl~IoaVLJG045VUOCuPBwPymDfUkAr-6zn-0v304-VErYJTRo7xAtgyn0U1r3WnjDTyydQ2facGJzdIOLeXm8tiE7CwZrZP7R6Z7ZsS-s7abEOJFOEtd5wEaX4kMGNS04sSWcBhTtqoU7pjwuAYGBnTR2rSibHsBhmxgNtWzzON-dNHTVMX~BFtYCbSQO1sjmYFsvF51JX2srWjg__%22%7D"
-                }
+                https:src="i.postimg.cc/5NfmxZCQ/api.png"
                 className="max-w-full max-h-full object-contain"
               />
             </div>
