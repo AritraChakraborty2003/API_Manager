@@ -32,7 +32,7 @@ const FormArea = () => {
           <div className="leftHolder  rounded-[2.5vmin] opacity-90 flex flex-col gap-y-7 justify-center items-center  w-[50vw] bg-[#128496] lg:h-[90vmin]">
             <div className="imageHolder w-[28vw] h-[65vmin]">
               <img
-                https:src="https://i.postimg.cc/5NfmxZCQ/api.png"
+                src="https://i.postimg.cc/5NfmxZCQ/api.png"
                 className="max-w-full max-h-full object-contain"
               />
             </div>
